@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kenyan Underground Rap</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      background: #000;
+      color: #fff;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      border-bottom: 1px solid #222;
+    }
+
+    header h1 {
+      letter-spacing: 2px;
+    }
+
+    .search-box input {
+      padding: 8px;
+      background: #111;
+      border: 1px solid #333;
+      color: white;
+    }
+
+    .hero {
+      padding: 60px 40px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      align-items: center;
+    }
+
+    .hero h2 {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      color: #aaa;
+      margin-bottom: 20px;
+    }
+
+    .buttons button {
+      padding: 10px 20px;
+      margin-right: 10px;
+      border: none;
+      cursor: pointer;
+    }
+
+    .primary {
+      background: white;
+      color: black;
+    }
+
+    .secondary {
+      background: transparent;
+      border: 1px solid white;
+      color: white;
+    }
+
+    .trending {
+      background: #111;
+      padding: 30px;
+      border-radius: 10px;
+    }
+
+    .trending ul {
+      margin-top: 15px;
+      color: #bbb;
+    }
+
+    .trending li {
+      margin-bottom: 10px;
+    }
+
+    .artists {
+      padding: 40px;
+    }
+
+    .artists h3 {
+      margin-bottom: 20px;
+      font-size: 24px;
+    }
+
+    .artist-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+
+    .artist-card {
+      background: #111;
+      padding: 20px;
+      border-radius: 10px;
+      border: 1px solid #222;
+      transition: 0.3s;
+    }
+
+    .artist-card:hover {
+      border: 1px solid white;
+    }
+
+    .artist-card h4 {
+      margin-bottom: 5px;
+    }
+
+    .artist-card p {
+      color: #aaa;
+      font-size: 14px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      border-top: 1px solid #222;
+      color: #777;
+    }
+
+    @media (max-width: 768px) {
+      .hero {
+        grid-template-columns: 1fr;
+      }
+
+      .hero h2 {
+        font-size: 32px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>KE UNDERGROUND RAP</h1>
+  <div class="search-box">
+    <input type="text" placeholder="Search artists, tracks...">
+  </div>
+</header>
+
+<section class="hero">
+  <div>
+    <h2>Kenyan Underground Rap Scene 🔥</h2>
+    <p>Discover raw talent, drill movement, street cyphers and upcoming rappers shaping Kenyan hip hop culture.</p>
+    <div class="buttons">
+      <button class="primary">Explore Artists</button>
+      <button class="secondary">Submit Your Track</button>
+    </div>
+  </div>
+
+  <div class="trending">
+    <h3>Trending Right Now</h3>
+    <ul>
+      <li>Rong Rende — Drill Wave</li>
+      <li>Nairobi Cypher Vol. 3</li>
+      <li>Eastlands Freestyle</li>
+      <li>Underground Sessions</li>
+    </ul>
+  </div>
+</section>
+
+<section class="artists">
+  <h3>Featured Artists</h3>
+  <div class="artist-grid">
+    <div class="artist-card">
+      <h4>Wakadinali</h4>
+      <p>Drill / Underground</p>
+      <p>Nairobi</p>
+    </div>
+
+    <div class="artist-card">
+      <h4>Katapilla</h4>
+      <p>Hardcore Rap</p>
+      <p>Eastlands</p>
+    </div>
+
+    <div class="artist-card">
+      <h4>Boutross</h4>
+      <p>Gengetone / Alt Rap</p>
+      <p>Nairobi</p>
+    </div>
+
+    <div class="artist-card">
+      <h4>Xenia Manasseh</h4>
+      <p>Alt Hip Hop</p>
+      <p>Nairobi</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  © 2026 Kenyan Underground Rap — Built for the culture 🇰🇪
+</footer>
+
+</body>
+</html>

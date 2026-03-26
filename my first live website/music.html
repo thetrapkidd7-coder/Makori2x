@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music - Kenyan Underground Rap</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      background: #000;
+      color: #fff;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      border-bottom: 1px solid #222;
+    }
+
+    nav h1 {
+      letter-spacing: 2px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .container {
+      padding: 40px;
+    }
+
+    .playlist {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    .playlist h2 {
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+
+    .track {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      margin-bottom: 20px;
+    }
+
+    .track button {
+      background: #fff;
+      color: #000;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    .albums {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
+
+    .album-card {
+      background: #111;
+      padding: 20px;
+      border-radius: 10px;
+      border: 1px solid #222;
+      text-align: center;
+      transition: 0.3s;
+    }
+
+    .album-card img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+
+    .album-card h3 {
+      margin-bottom: 10px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      border-top: 1px solid #222;
+      color: #777;
+    }
+
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        gap: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <h1>KE UNDERGROUND RAP</h1>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="artists.html">Artists</a></li>
+    <li><a href="music.html">Music</a></li>
+    <li><a href="submit.html">Submit Track</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<div class="container">
+  <div class="playlist">
+    <h2>Featured Playlist</h2>
+    <div class="track">
+      <button>Play</button>
+      <div>
+        <p><strong>\"Rong Rende\" - Wakadinali</strong></p>
+        <p>Drill / Nairobi</p>
+      </div>
+    </div>
+    <div class="track">
+      <button>Play</button>
+      <div>
+        <p><strong>\"Nairobi Cypher Vol. 3\" - Katapilla</strong></p>
+        <p>Hardcore Rap / Eastlands</p>
+      </div>
+    </div>
+  </div>
+
+  <h2 style="text-align:center; margin-top:50px;">Albums</h2>
+  <div class="albums">
+    <div class="album-card">
+      <img src="album1.jpg" alt="Album 1">
+      <h3>Rong Rende EP</h3>
+      <p>Wakadinali</p>
+    </div>
+    <div class="album-card">
+      <img src="album2.jpg" alt="Album 2">
+      <h3>Eastlands Cyphers</h3>
+      <p>Katapilla & Boutross</p>
+    </div>
+    <div class="album-card">
+      <img src="album3.jpg" alt="Album 3">
+      <h3>Alt Nairobi Sessions</h3>
+      <p>Xenia Manasseh</p>
+    </div>
+  </div>
+</div>
+
+<footer>
+  © 2026 Kenyan Underground Rap — Built for the culture 🇰🇪
+</footer>
+
+</body>
+</html>
